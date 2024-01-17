@@ -76,6 +76,7 @@ public class OrderRepository {
 
         //주문 상태 검색
         if(orderSearch.getOrderStatus() != null) {
+
             Predicate status = cb.equal(o.get("status"), orderSearch.getOrderStatus());
             criteria.add(status);
         }
