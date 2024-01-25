@@ -26,8 +26,6 @@ public class OrderRepository {
     }
 
     public List<Order> findAllByString(OrderSearch orderSearch) {
-        System.out.println("test1111111====");
-
         String jpql = "select o from Order o join o.member m";
         boolean isFirstCondition = true;
 
